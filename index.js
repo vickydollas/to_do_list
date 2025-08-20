@@ -1,6 +1,6 @@
 const todoList = [{
-    listName: '',
-    listDate: ''
+    listName: 'shouting',
+    listDate: '24-08-2023'
 }]
 const inputText = document.querySelector('.inputText')
 const inputDate = document.querySelector('.inputDate')
@@ -14,13 +14,13 @@ function displayHTML(){
         const listName = name.listName
         const listDate = name.listDate
         const html = `
-            <p>
-                ${listName} ${listDate}
-                <button onclick="
-                    todoList.splice(${i}, 1)
-                    displayHTML()
-                ">delete</button>
-            </p>`
+            <div>${listName}</div>
+            <div>${listDate}</div>
+            <button onclick="
+                todoList.splice(${i}, 1)
+                displayHTML()
+                " class="js-button">delete
+            </button>`
         pushHTML = pushHTML + html
     }
     document.querySelector('.display-to-do-1').innerHTML = pushHTML
