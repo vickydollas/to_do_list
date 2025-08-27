@@ -1,6 +1,6 @@
 const todoList = [{
-    listName: 'shouting',
-    listDate: '24-08-2023'
+    listName: '',
+    listDate: ''
 }]
 const inputText = document.querySelector('.inputText')
 const inputDate = document.querySelector('.inputDate')
