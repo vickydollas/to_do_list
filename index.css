@@ -7,7 +7,7 @@ body{
 .container{
     width: 70%;
     background-color: #97a8a4;
-    height: 50vh;
+    min-height: 50vh;
     margin: 100px 0 0 0;
     border-radius: 30px;
 }
@@ -19,7 +19,7 @@ body{
     text-align: center;
     margin: 10px 0 10px 20px;
 }
-.inputInfo, .to-do-list{
+.inputInfo{
     width: 80%;
     display: grid;
     grid-template-columns: 2.5fr 2.5fr 1fr;
@@ -47,6 +47,10 @@ input[type="date"], input[type="text"] {font-size: 20px; padding-left: 20px;}
     cursor: pointer;
 }
 .to-do-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
     align-items: center;
     font-size: 25px;
     margin-top: 20px;
@@ -55,9 +59,13 @@ input[type="date"], input[type="text"] {font-size: 20px; padding-left: 20px;}
 }
 .js-button{
     background-color: darkred;
+    justify-self: end;
     cursor: pointer;
     height: 6vh;
-    width: 80%;
+    width: 27%;
     border-radius: 20px;
-    margin: 10px 0 0 20px; 
+    margin: 10px 25px 0 20px; 
+}
+.separation{
+    margin-left: 30px;
 }

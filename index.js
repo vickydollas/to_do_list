@@ -14,8 +14,9 @@ function displayHTML(){
         const listName = name.listName
         const listDate = name.listDate
         const html = `
-            <div>${listName}</div>
-            <div>${listDate}</div>
+            <ul>
+                <li draggable="true">${listName}<span class="separation">${listDate}</span></li>
+            </ul>
             <button onclick="
                 todoList.splice(${i}, 1)
                 displayHTML()
