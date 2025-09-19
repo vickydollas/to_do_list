@@ -1,15 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    /* margin: 0; */
-    /* padding: 0; */
+    margin: 0;
+    padding: 0;
     justify-items: center;
-    background-image: url(images/to-do-list.jpg);
 }
 .container{
-    width: 70%;
-    background-color: #97a8a4;
-    min-height: 50vh;
-    margin: 100px 0 0 0;
-    border-radius: 30px;
+    width: 50%;
+    background-color: rgba(223, 13, 13, 0.055);
+    box-shadow: 0 0 5px rgb(238, 236, 235);
+    min-height: 30vh;
 }
 .container > p{
     font-family: Arial, Helvetica, sans-serif;
@@ -17,65 +19,70 @@ body{
     font-style: italic;
     font-weight: lighter;
     text-align: center;
-    margin: 10px 0 10px 20px;
 }
 .inputInfo{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 2.5fr 2.5fr 1fr;
-    margin: 0 auto;
+    display: flex;
 }
 input::placeholder{font-size: 20px;padding-left: 20px;}
 input[type="date"], input[type="text"] {font-size: 20px; padding-left: 20px;}
 /* input[type="text"] {font-size: 25px; padding-left: 20px;} */
-.inputText, .inputDate{
-    width: 95%;
-    background-color: #ecedef;
-    border-radius: 50px;
-    border-width: 0.1rem;
-    height: 6vh;
-    margin: 0;
-    padding: 0;
+.inputText{
+    width: 85%;
+    background-color: white;
+    /* border: none; */
+    flex-grow: 1;
+    outline: none;
+    height: 10vh;
 }
 .trigger{
-    /* display: inline; */
-    /* margin-left: 10p; */
-    width: 80%;
-    background-color: green;
-    border-radius: 20px;
-    height: 6vh;
+    width: 50px;
+    background-color: white;
     cursor: pointer;
+    /* align-items: center; */
 }
 .to-do-list{
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    width: 80%;
-    margin: 0 auto;
-    align-items: center;
     font-size: 25px;
-    margin-top: 20px;
-    /* color: aliceblue; */
     font-family: Arial, Helvetica, sans-serif;
 }
 .js-button{
-    /* display: inline; */
-    background-color: darkred;
+    background-color: white;
     justify-self: end;
     cursor: pointer;
-    height: 6vh;
-    width: 27%;
+    /* height: 6vh; */
+    width: 50px;
     border-radius: 20px;
-    margin: 10px 25px 0 20px; 
+    float: right;
+    /* margin: 10px 25px 0 20px;  */
 }
-.separation{
-    margin-left: 30px;
+.js-button-1{
+    background-color: white;
+    justify-self: end;
+    cursor: pointer;
+    /* height: 6vh; */
+    width: 50px;
+    border-radius: 20px;
+    float: right;
+    /* margin: 10px 25px 0 20px;  */
 }
 .list-item{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 8vh;
+    /* border-radius: 1px; */
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-item > p{padding-left: 20px; border: 1px; border-width: 20px;}
+.clear-all{
+    text-align: center;
+    cursor: pointer;
 }
 .dragging {
     cursor: pointer;
     opacity: 0.5;
     transform: scale(0.95);
+}
+.edit-input{
+    height: 8vh;
+    flex-grow: 1;
 }

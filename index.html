@@ -6,11 +6,17 @@
     <div class="container">
         <p>To-Do list</p>
         <div class="inputInfo">
-            <div><input type="text" placeholder="input schedule" class="inputText"></div>
-            <div><input type="date" class="inputDate"></div>
-            <div><button class="trigger" style="margin-left: 20px;">Add</button></div>
+            <input type="text" placeholder="input schedule" class="inputText">
+            <img src="./images/arrow-left-bottom.svg" class="trigger" alt="">
+            <!-- <div><input type="date" class="inputDate"></div> -->
+            <!-- <div><button class="trigger" style="margin-left: 20px;">Add</button></div> -->
         </div>
         <div class="display-to-do-1 to-do-list"></div>
+        <p class="clear-all"
+            onclick="
+                todoList.splice(0, todoList.length)
+                displayHTML()"
+            >Clear All</p>
     </div>
     <script src="index.js"></script>
 </body>
